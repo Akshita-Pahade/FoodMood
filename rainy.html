@@ -255,10 +255,9 @@
 
 <script>
   function showRecipe(id) {
-    const allRecipes = document.querySelectorAll('.recipe');
-    allRecipes.forEach(div => div.style.display = 'none');
-    document.getElementById(id).style.display = 'block';
-  }
+  const recipe = document.getElementById(id);
+  recipe.style.display = recipe.style.display === 'block' ? 'none' : 'block';
+}
 </script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
